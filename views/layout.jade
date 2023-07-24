@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    each message in messages
+      div
+        br
+        h3= message.text
+        p= `User: ${message.user}`
+        p= `Added: ${message.added}`
+        br
